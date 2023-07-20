@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWH-Portfolio Website 1</title>
+
+    <!-- custom css -->
+    <style>
+        @font-face {
+            font-family: Roboto;
+            src: url("./fonts/Roboto/Roboto-Regular.ttf");
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Roboto;
+            color: aliceblue;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: unset;
+        }
+
+        body {
+            background-color: rgb(0, 2, 15);
+
+
+        }
+
+
+
+        /* -------------------- Nav style start ----------------------- */
+
+        nav {
+            width: 100%;
+            height: 140px;
+            background-color: rgb(1, 4, 27);
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        #navbar {
+            width: 100%;
+            margin: 0 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+
+        .nav-logo {
+            width: 50%;
+
+        }
+
+        .nav-logo .logo {
+            width: 100px;
+            padding-left: 30%;
+        }
+
+
+        .nav-menu ul {
+            display: flex;
+            padding-right: 200px;
+        }
+
+        .nav-menu ul li {
+            list-style: none;
+            margin-right: 5vw;
+            color: gainsboro;
+
+        }
+
+        .nav-menu ul li:hover {
+            color: white;
+
+        }
+
+        .nav-menu ul li a {
+            font-size: 1.2em;
+            color: none;
+
+        }
+
+        /* -------------------- Nav style End ----------------------- */
+
+        /* -------------------- Main style Start ----------------------- */
+        .banner-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 5% 10% 0;
+
+        }
+
+
+
+        #banner-desc {
+            color: azure;
+            height: 300px;
+            font-size: 1.5em;
+        }
+
+        h1.desc {
+            margin-top: 30px;
+        }
+
+        #text-logo {
+            width: 390px;
+            position: relative;
+            top: -140px;
+        }
+
+
+        #banner-desc :nth-child(3) {
+            position: relative;
+            top: -300px;
+        }
+
+        #logo-banner {
+            width: 500px;
+            margin-right: 2%;
+        }
+
+        #banner-image {
+            display: flex;
+            align-items: center;
+        }
+
+        #element {
+            color: aquamarine;
+        }
+
+        .divider {
+            margin: 120px 10% 0 10%;
+            width: 80%;
+            height: 2px;
+            background-color: white
+        }
+
+        section.experience {
+            position: relative;
+            height: 500px;
+
+
+        }
+
+        section.experience>h1 {
+            color: white;
+            margin-left: 15vw;
+            margin-top: 20px;
+            font-size: 1.8em;
+        }
+
+        .road-line {
+            margin: 90px 15vw 0;
+            width: 65vw;
+            height: 2px;
+            background-color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            gap: 16em;
+            color: aliceblue;
+
+        }
+
+
+        .road-line-vr {
+            width: 2px;
+            height: 50px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .road-line-vr:hover {
+            transform: scale(1.05);
+            position: relative;
+            top: 1px;
+            transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+
+        .road-line-vr img {
+            width: 50px;
+            position: relative;
+            transform: translate(-25px, -65px);
+
+
+        }
+
+        .road-line-vr span {
+            width: 10vw;
+            font-size: 1em;
+
+
+        }
+
+        .road-line-vr p {
+            width: 16vw;
+            font-size: 1.3em;
+            margin: 10px 0;
+
+
+        }
+
+
+
+
+        /* -------------------- Main style End ----------------------- */
+        /* -------------------- FOOTER style START ----------------------- */
+        .footer {
+            height: 200px;
+            background-color: rgb(1, 4, 27);
+
+        }
+
+        .footer-container {
+            height: 180px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        .footer-container .foot-left {
+            font-size: 1.8em;
+
+        }
+
+        .foot-left :nth-child(1) {
+            font-size: 1.5em;
+        }
+
+        .foot-right {
+            display: flex;
+            gap: 10em;
+        }
+
+        .foot-right ul li {
+            margin-bottom: 10px;
+        }
+
+        .copyright {
+            width: 365px;
+            margin: 0 40vw;
+            position: relative;
+            top: -10px;
+        }
+
+        /* -------------------- FOOTER style END ----------------------- */
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <!------------------------- NAV HTML START ------------------------------>
+
+        <nav>
+            <div id="navbar" class="container">
+                <div class="nav-logo">
+                    <a href="#">
+                        <img src="./img/logo.png" class="logo" alt="Logo"></a>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!------------------------- NAV HTML END ------------------------------>
+
+
+    </header>
+
+
+    <!----------------------------- MAIN HTML START ------------------------------>
+
+
+    <main>
+        <div class="banner-container">
+            <div class="main-banner">
+                <div id="banner-desc">
+                    <h1 class="desc">Hello, My name is</h1>
+                    <img id="text-logo" src="./img/text-white.png" alt="Text logo">
+                    <h1 class="desc">I am a <span id="element"></span></h1>
+                </div>
+            </div>
+            <div class="main-banner">
+                <div id="banner-image">
+                    <img id="logo-banner" src="./img/logo.png" alt="Logo in banner">
+                </div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+        <section class="experience">
+            <h1>Work Experience</h1>
+            <div class="road-line">
+
+                <div class="road-line-vr">
+                    <img src="./img/3d-icon.png" alt="3d cube icon">
+                    <h1 class="work-h1">3D Generalist</h1><span>(2017 - )</span>
+                    <p>Officia velit aliquip excepteur nostrud. Adipisicing sit consequat commodo adipisicing.</p>
+
+                </div>
+
+
+                <div class="road-line-vr">
+                    <img src="./img/video-editor-icon.png" alt="3d cube icon">
+                    <h1 class="work-h1">Video Editor</h1><span>(2020 - 2023)</span>
+                    <p>Officia velit aliquip excepteur nostrud. Adipisicing sit consequat commodo adipisicing.</p>
+
+                </div>
+
+
+                <div class="road-line-vr">
+                    <img src="./img/webdev-icon.png" alt="3d cube icon">
+                    <h1 class="work-h1">Web Developer</h1><span>(2023 - )</span>
+                    <p>Officia velit aliquip excepteur nostrud. Adipisicing sit consequat commodo adipisicing.</p>
+
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <!----------------------------- MAIN HTML END ------------------------------>
+
+
+    <!----------------------------- FOOTER START---------------------------->
+    <section class="footer">
+        <div class="footer-container">
+            <div class="foot-left">
+                <div>aliparttwo's</div>
+                <div>Portfolio Website</div>
+            </div>
+            <div class="foot-right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="copyright">Copyright www.aliparttwo.com | All rights reserved.</div>
+    </section>
+
+    <!----------------------------- FOOTER END ---------------------------->
+
+
+
+
+
+
+
+    <!-- Typed.js import -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+
+        var typed = new Typed('#element', {
+            strings: ['3D Modeler.', '3D Animator.', 'Video Editor.', 'Web Developer.'],
+            typeSpeed: 60,
+            loop: true,
+            loopCount: Infinity,
+            showCursor: true,
+            smartBackspace: true,
+            backSpeed: 50,
+            backDelay: 1000,
+
+        });
+
+    </script>
+</body>
+
+</html>
