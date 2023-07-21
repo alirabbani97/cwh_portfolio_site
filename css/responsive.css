@@ -1,9 +1,7 @@
 
 @media screen and (max-width: 1000px) {
 
-body{
 
-  }
   .banner-container {
     display: flex;
     flex-direction: column-reverse;
