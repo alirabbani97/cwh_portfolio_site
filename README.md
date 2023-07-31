@@ -3,4 +3,4 @@ My portfolio website.
 
 <h2><a href="https://aliparttwo.vercel.app/"> Vercel Site </a></h2>
 
-<h3>A personal project that I will keep on updating as I will learn more and more</h3>
+<h3>A WIP personal project that I will keep on updating as I will learn more and more</h3>
